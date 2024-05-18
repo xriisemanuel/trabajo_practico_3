@@ -1,75 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>TP03-Programación-Visual</title>
+    <meta charset="UTF-8">
+    <title>TP03-Programación-Visual</title>
+   	<link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-	<header>
-		<h1>Header Zone - Virtual UNJu</h1>
-	</header>
-	<nav>
-		<a href="https://virtual.unju.edu.ar/">Link 1 - Home Page</a> <br>
-		<a href="https://virtual.unju.edu.ar/course/view.php?id=2540">Link
-			2 - Programacion_Visual Home</a> <br> 
-		<a href="https://virtual.unju.edu.ar/user/profile.php?id=95175">Link
-			3 - My Profile on Virtual UNJu</a>
-	</nav>
-	<main>
-		<section>
-			<h2>Section 1 Title with h2 tag</h2>
-			<h3>Section 1 Title with h3 tag</h3>
-		</section>
+    <header id="header-index">
+        <h1>Virtual UNJu - Programacion_Visual</h1>
+    </header>
+    <nav class="class-nav">
+        <a class="enlaces" href="https://virtual.unju.edu.ar/">Link 1 - Home Page</a> <br>
+        <a class="enlaces" href="https://virtual.unju.edu.ar/course/view.php?id=2540">Link
+            2 - Programacion_Visual Home</a> <br>
+        <a class="enlaces" href="https://virtual.unju.edu.ar/user/profile.php?id=95175">Link
+            3 - My Profile on Virtual UNJu</a>
+        </nav>
+        <button>
+            <a href="form-cliente.html">Ir al Formulario de Clientes</a>
+        </button>
+        <main class="main-index">
+            <section class="secciones">
+                <h3 class="h-secciones">Section 1</h3>
+                <h2 class="h-secciones">Lista Desordenada</h2>
+                <p class="parrafo-secciones">Parrafo: Creando una lista de materias...</p>
+                <ul class="lista-desordenada">
+                    <li class="items-listas">Programacion Visual</li>
+                    <li class="items-listas">Base de Datos 2</li>
+                    <li class="items-listas">Algebra 1</li>
+                    <li class="items-listas">Ingles 3</li>
+                    <li class="items-listas">Laboratorio de Sistemas Operativos 2</li>
+                </ul>
+            </section>
 
-		<section>
-			<h2>Section 2 Title with h2 tag</h2>
-			<h3>Section 2 Title with h3 tag</h3>
-		</section>
+            <section class="secciones">
+                <h3 class="h-secciones">Seccion 2</h3>
+                <h2 class="h-secciones">Lista Ordenada</h2>
+                <p class="parrafo-secciones">Parrafo: Creando otra lista de materias...</p>
+                <ol class="lista-ordenada">
+                    <li class="items-listas">Programacion Estructurada</li>
+                    <li class="items-listas">Herramientas 1</li>
+                    <li class="items-listas">Ingles 1</li>
+                    <li class="items-listas">Base de Datos 1</li>
+                    <li class="items-listas">Laboratorio de Sistemas Operativos 1</li>
+                </ol>
+            </section>
 
-		<section>
-			<h2>Section 3 Title with h2 tag</h2>
-			<h3>Section 3 Title with h3 tag</h3>
-		</section>
+            <section class="secciones">
+                <h3 class="h-secciones">Seccion 3</h3>
+                <h2 class="h-secciones">Tabla</h2>
+                <p class="parrafo-secciones">Parrafo: Creando una tabla...</p>
+                <table class="tabla">
+                    <tr>
+                        <th>Column 1 title</th>
+                        <th>Column 2 title</th>
+                    </tr>
+                    <tr>
+                        <td>Element column 1</td>
+                        <td>Element column 2</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
 
-		<p>new paragraph with p</p>
+        <aside class="aside-index">
+            <a class="ancla-aside" href="https://virtual.unju.edu.ar/" target="_blank">Link on
+                aside - Home Page</a> <img class="imagen-aside" alt="Image example" src="/Images/unju.png" title="Unju Picture">
+        </aside>
 
-		<br>
-
-		<h1>Unordered List</h1>
-		<ul>
-			<li>First Line</li>
-			<li>Second Line</li>
-		</ul>
-
-		<h1>Ordered List</h1>
-		<ol>
-			<li>First Line</li>
-			<li>Second Line</li>
-		</ol>
-
-		<table>
-			<tr>
-				<th>Column 1 title</th>
-				<th>Column 2 title</th>
-			</tr>
-			<tr>
-				<td>Element column 1</td>
-				<td>Element column 2</td>
-			</tr>
-		</table>
-		<br>
-	</main>
-
-	<aside>
-		<a href="https://virtual.unju.edu.ar/" target="_blank">Link on
-			aside - Home Page</a> <img alt="Image example" src="/Images/unju.png"
-			title="Unju Picture">
-	</aside>
-
-	<footer>
-		<p>Footer Page</p>
-		<p>Social Media Links Here</p>
-		<p>End of Page</p>
-	</footer>
+        <footer id="pie-de-pagina">
+            <p>Footer Page</p>
+            <p>Social Media Links Here</p>
+            <p><a class="ancla-pie" href="http://www.unju.edu.ar/">Unju.edu.ar</a></p>
+            <p><a class="ancla-pie" href="mailto:virtual@unju.edu.ar">Correo Unju</a></p>
+            <p>End of Page</p>
+        </footer>
 </body>
+
 </html>

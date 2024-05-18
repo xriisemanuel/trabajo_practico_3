@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP03-Parte2</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="form-body">
+    <header id="header-form-client">
+        <h1>Registro de Clientes</h1>
+    </header>
+    <div class="container">
+        <!--Accion indica a donde se esta mandando los datos-->
+        <!--Get es para recibir informacion-->
+        <form action="" id="formulario" method="get">
+            <!--Mi formulario-->
+            <!--NOMBRE-->
+            <p>
+                <label for="name">Nombre:</label>
+                <!--name="" es el nombre con el que viajara el contenido del campo-->
+                <!--id="" es el enlace o vinculo con el label-->
+                <input type="text" name="nombre" id="name" size="25" placeholder="ingrese su nombre" maxlength="15"
+                    minlength="2" required>
+            </p>
+            <!--APELLIDO-->
+            <p>
+                <label for="lastname">Apellido:</label> <input type="text" name="apellido" id="lastname" size="20"
+                    placeholder="ingrese su apellido" maxlength="15" minlength="2" required>
+            </p>
+            <!--DNI-->
+            <p>
+                <label for="dni">DNI:</label> <input type="number" name="dni" id="dni" placeholder="ingrese su dni"
+                    required>
+            </p>
+            <!--FECHA DE NACIMIENTO-->
+            <p>
+                <label for="date">Fecha de Nacimiento:</label> <input type="date" name="date" id="date"
+                    value="2024-12-25" min="1998-01-01" max="2024-12-25" required>
+            </p>
+            <!--GENERO-->
+            <p>
+            <h2>Elegi tu genero</h2>
+            <section class="seccion-cat">
+                <input class="multi-opcion" type="radio" name="opcion" value="Masculino"> Masculino
+                <input class="multi-opcion" type="radio" name="opcion" value="Femenino"> Femenino
+                <input class="multi-opcion" type="radio" name="opcion" value="Otro">Otro
+            </section>
+            </p>
+            <!--CORREO ELECTRONICO-->
+            <p>
+                <label for="email">Correo Electronico:</label> <input type="email" name="email" id="email" placeholder="ingrese su correo..." required>
+            </p>
+            <!--DOMICILIO-->
+            <p>
+                <label for="domicilio">Domicilio:</label> <input type="text" name="domicilio" id="domicilio" size="30"
+                    placeholder="ingrese su direccion" maxlength="30" minlength="5" required>
+            </p>
+            <!--PROVINCIA-->
+            <label for="provincia">Selecciona tu provincia:</label>
+            <select name="provincia" id="provincia" required>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select>
+            <!--NUMERO CELULAR-->
+            <p>
+                <label for="phone">Telefono Celular:</label> <input type="tel" name="phone" id="phone"
+                    placeholder="ingrese su telefono" maxlength="10" required>
+            </p>
+            <!--CATEGORIAS DE INTERES-->
+            <h2>Categorias de Interes</h2>
+            <section class="seccion-cat">
+                <input type="checkbox" name="opcion" value="Categoria 1">
+                Categoria 1 <input type="checkbox" name="opcion" value="Categoria 1">
+                Categoria 2 <input type="checkbox" name="opcion" value="Categoria 1">
+                Categoria 3
+            </section>
+            <!--SUGERENCIAS PARA LA EMPRESA-->
+            <p>
+                <label for="sugerencia">Sugerencias</label>
+            </p>
+            <p>
+                <textarea name="sugerencia" id="sugerencia" rows="8" cols="40"
+                    placeholder="Ingrese un comentario"></textarea>
+            </p>
+            <!--PASSWORD-->
+            <p>
+                <label for="password">Contraseña:</label> <input type="password" name="password"
+                    id="password" placeholder="ingrese una contraseña" maxlength="15" minlength="4" required>
+            </p>
+            <!--TERMINOS Y CONDICIONES-->
+            <p>
+                <input type="checkbox" name="opcion" id="terminos" required>Acepto
+                los Terminos y Condiciones
+            </p>
+            <!--INFORMACION RELATIVA DE LA EMPRESA-->
+            <p>
+                <input type="checkbox" name="opcion" id="recibir">Acepto
+                recibir informacion relativa a la empresa
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+            <p>
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </div>
+    <br>
+    <footer class="footer-form">
+        <h1>final del formulario</h1>
+    </footer>
+</body>
+
+</html>
