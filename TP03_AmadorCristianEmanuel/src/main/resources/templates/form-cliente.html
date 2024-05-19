@@ -41,14 +41,14 @@
                     value="2024-12-25" min="1998-01-01" max="2024-12-25" required>
             </p>
             <!--GENERO-->
-            <p>
+            <div>
             <h2>Elegi tu genero</h2>
             <section class="seccion-cat">
                 <input class="multi-opcion" type="radio" name="opcion" value="Masculino"> Masculino
                 <input class="multi-opcion" type="radio" name="opcion" value="Femenino"> Femenino
                 <input class="multi-opcion" type="radio" name="opcion" value="Otro">Otro
             </section>
-            </p>
+            </div>
             <!--CORREO ELECTRONICO-->
             <p>
                 <label for="email">Correo Electronico:</label> <input type="email" name="email" id="email" placeholder="ingrese su correo..." required>
@@ -61,6 +61,7 @@
             <!--PROVINCIA-->
             <label for="provincia">Selecciona tu provincia:</label>
             <select name="provincia" id="provincia" required>
+             	<option value="" disabled selected>Seleccione una opción</option>
                 <option value="Buenos Aires">Buenos Aires</option>
                 <option value="Catamarca">Catamarca</option>
                 <option value="Chaco">Chaco</option>
